@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="200"
+   height="200"
+   viewBox="0 0 200 200"
+   version="1.1"
+   id="svg15"
+   sodipodi:docname="jhl.svg"
+   inkscape:version="1.4.2 (2aeb623e1d, 2025-05-12)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs15" />
+  <sodipodi:namedview
+     id="namedview15"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="4.065"
+     inkscape:cx="103.19803"
+     inkscape:cy="100"
+     inkscape:window-width="1920"
+     inkscape:window-height="1018"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg15" />
+  <rect
+     style="opacity:1;fill:#009100;stroke:none;stroke-width:2"
+     id="rect15"
+     width="195"
+     height="195"
+     x="2.5"
+     y="2.5"
+     rx="19.5" />
+  <g
+     id="g15"
+     transform="translate(0,-3.8702136)">
+    <text
+       xml:space="preserve"
+       style="font-size:85.7483px;line-height:1.25;font-family:'Noto Serif CJK KR';-inkscape-font-specification:'Noto Serif CJK KR, Normal';letter-spacing:-5.28571px;stroke-width:1"
+       x="5.8252192"
+       y="130.02028"
+       id="text15"><tspan
+         sodipodi:role="line"
+         id="tspan15"
+         x="5.8252192"
+         y="130.02028"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Audiowide;-inkscape-font-specification:Audiowide;letter-spacing:-5.28571px;fill:#ffffff;stroke-width:1">JHL</tspan></text>
+    <path
+       style="fill:none;stroke:#ffffff;stroke-width:3.77953;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+       d="M 7.5000013,135.87094 H 192.5"
+       id="path15" />
+  </g>
+</svg>

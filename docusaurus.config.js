@@ -10,8 +10,8 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
+  title: 'Johannes Lichtenwallner',
+  tagline: 'Where clean architecture meets clear thinking',
   favicon: 'img/favicon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -20,25 +20,34 @@ const config = {
   },
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
+  url: 'https://jolicht.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'jolicht', // Usually your GitHub org/user name.
+  projectName: 'jolicht.github.io', // Usually your repo name.
 
   onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
-    locales: ['en'],
+    locales: ['en', 'de'],
+    localeConfigs: {
+      en: { 
+        label: 'English',
+        htmlLang: 'en-US',
+      },
+      de: { 
+        label: 'Deutsch',
+        htmlLang: 'de-AT',
+       },
+    },
   },
 
   presets: [
@@ -46,13 +55,7 @@ const config = {
       'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
-        docs: {
-          sidebarPath: './sidebars.js',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-        },
+        docs: false,
         blog: {
           showReadingTime: true,
           feedOptions: {
@@ -80,16 +83,28 @@ const config = {
     ({
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
+      colorMode: {
+        respectPrefersColorScheme: true,
+      },
+      metadata: [
+        { name: 'author', content: 'Johannes Lichtenwallner' },
+        {
+          name: 'keywords',
+          content:
+            'PHP, Symfony, Event Sourcing, CQRS, Serverless, AWS, Architecture, Laravel',
+        },
+      ],
       navbar: {
-        title: 'JHL',
+        title: 'Johannes Lichtenwallner',
         logo: {
-          alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          alt: 'JHL Monogram',
+          src: 'img/jhl.svg',
         },
         items: [
           {to: '/blog', label: 'Blog', position: 'left'},
+          { type: 'localeDropdown', position: 'right' },
           {
-            href: 'https://github.com/jolicht',
+            href: 'https://github.com/facebook/docusaurus',
             label: 'GitHub',
             position: 'right',
           },
@@ -98,7 +113,6 @@ const config = {
       footer: {
         style: 'dark',
         links: [
-
           {
             title: 'Community',
             items: [
