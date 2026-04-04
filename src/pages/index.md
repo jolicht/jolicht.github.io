@@ -6,10 +6,10 @@ hide_table_of_contents: false
 
 # Johannes Lichtenwallner
 
-### Senior Software Engineer · Software Architect  
+### Senior Software Engineer · Software Architect
 PHP · Symfony · Event Sourcing · CQRS
 
-Über 20 Jahre Erfahrung in der Entwicklung modularer, testbarer und langfristig wartbarer Softwaresysteme.  
-Spezialisiert auf **Domain-Driven Design**, **Event Sourcing** und **CQRS** mit **PHP/Symfony**.
+Over 20 years of experience building modular, testable, and long-lasting software systems.  
+Specialized in **Domain-Driven Design**, **Event Sourcing**, and **CQRS** using **PHP/Symfony**.
 
-Ich lege Wert auf klare Modelle, sauberen Code und Entscheidungen, die Komplexität reduzieren statt verbergen.
+I focus on clear models, clean code, and architectural decisions that reduce complexity instead of hiding it.
