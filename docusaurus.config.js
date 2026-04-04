@@ -36,14 +36,10 @@ const config = {
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'de',
-    locales: ['de', 'en'],
+    defaultLocale: 'en',
+    locales: ['en'],
     localeConfigs: {
-      de: { 
-        label: 'Deutsch',
-        htmlLang: 'de-AT',
-       },
-      en: { 
+      en: {
         label: 'English',
         htmlLang: 'en-US',
       },
@@ -55,22 +51,13 @@ const config = {
       'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
-        docs: false,
-        blog: {
-          showReadingTime: true,
-          feedOptions: {
-            type: ['rss', 'atom'],
-            xslt: true,
-          },
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-          // Useful options to enforce blogging best practices
-          onInlineTags: 'warn',
-          onInlineAuthors: 'warn',
-          onUntruncatedBlogPosts: 'warn',
+        docs: {
+          path: 'adrs',             // Physischer Ordner im Root
+          routeBasePath: 'adrs',    // URL-Pfad (z.B. jolicht.github.io/adrs)
+          sidebarPath: './sidebars.js',
+          editUrl: 'https://github.com/jolicht/jolicht.github.io/tree/main/',
         },
+        blog: false,
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -101,15 +88,17 @@ const config = {
           src: 'img/jhl.svg',
         },
         items: [
-          
-          { type: 'localeDropdown', position: 'right' },
           {
-            href: 'https://github.com/facebook/docusaurus',
+            type: 'docSidebar',
+            sidebarId: 'adrSidebar',
+            position: 'left',
+            label: 'ADRs',
+          },
+          {
+            href: 'https://github.com/jolicht/jolicht.github.io',
             label: 'GitHub',
             position: 'right',
           },
-    
-          {to: '/blog', label: 'Blog', position: 'left'},
         ],
       },
       footer: {
