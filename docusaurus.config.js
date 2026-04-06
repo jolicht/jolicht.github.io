@@ -1,12 +1,6 @@
 // @ts-check
-// `@type` JSDoc annotations allow editor autocompletion and type checking
-// (when paired with `@ts-check`).
-// There are various equivalent ways to declare your Docusaurus config.
-// See: https://docusaurus.io/docs/api/docusaurus-config
 
 import {themes as prismThemes} from 'prism-react-renderer';
-
-// This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -14,27 +8,18 @@ const config = {
   tagline: 'Where clean architecture meets clear thinking',
   favicon: 'img/favicon.ico',
 
-  // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
-    v4: true, // Improve compatibility with the upcoming Docusaurus v4
+    v4: true,
   },
 
-  // Set the production url of your site here
   url: 'https://lichtenwallner.at',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
 
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'jolicht', // Usually your GitHub org/user name.
-  projectName: 'jolicht.github.io', // Usually your repo name.
+  organizationName: 'jolicht',
+  projectName: 'jolicht.github.io',
 
   onBrokenLinks: 'throw',
 
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
     locales: ['en'],
@@ -52,8 +37,7 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          path: 'adrs',             // Physischer Ordner im Root
-          routeBasePath: 'adrs',    // URL-Pfad (z.B. jolicht.github.io/adrs)
+          // Removed path and routeBasePath so Docusaurus uses the default "docs/" directory
           sidebarPath: './sidebars.js',
           editUrl: 'https://github.com/jolicht/jolicht.github.io/tree/main/',
         },
@@ -66,78 +50,64 @@ const config = {
   ],
 
   themeConfig:
-    /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
-    ({
-      // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
-      colorMode: {
-        respectPrefersColorScheme: true,
-      },
-      metadata: [
-        { name: 'author', content: 'Johannes Lichtenwallner' },
-        {
-          name: 'keywords',
-          content:
-            'PHP, Symfony, Event Sourcing, CQRS, Serverless, AWS, Architecture, Laravel',
+  /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
+      ({
+        image: 'img/docusaurus-social-card.jpg',
+        colorMode: {
+          respectPrefersColorScheme: true,
         },
-      ],
-      navbar: {
-        title: 'Johannes Lichtenwallner',
-        logo: {
-          alt: 'JHL Monogram',
-          src: 'img/jhl.svg',
-        },
-        items: [
+        metadata: [
+          { name: 'author', content: 'Johannes Lichtenwallner' },
           {
-            type: 'docSidebar',
-            sidebarId: 'adrSidebar',
-            position: 'left',
-            label: 'ADRs',
-          },
-          {
-            href: 'https://github.com/jolicht/jolicht.github.io',
-            label: 'GitHub',
-            position: 'right',
+            name: 'keywords',
+            content: 'PHP, Symfony, Event Sourcing, CQRS, Serverless, AWS, Architecture, Laravel',
           },
         ],
-      },
-      footer: {
-        style: 'dark',
-        links: [
-          {
-            title: 'Community',
-            items: [
-              {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'X',
-                href: 'https://x.com/docusaurus',
-              },
-            ],
+        navbar: {
+          title: 'Johannes Lichtenwallner',
+          logo: {
+            alt: 'JHL Monogram',
+            src: 'img/jhl.svg',
           },
-          {
-            title: 'More',
-            items: [
-              {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
-              },
-            ],
-          },
-        ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
-      },
-      prism: {
-        theme: prismThemes.github,
-        darkTheme: prismThemes.dracula,
-      },
-    }),
+          items: [
+            {
+              type: 'docSidebar',
+              sidebarId: 'mainSidebar', // Correctly references the sidebar defined in sidebars.js
+              position: 'left',
+              label: 'Documentation',
+            },
+            {
+              href: 'https://github.com/jolicht/jolicht.github.io',
+              label: 'GitHub',
+              position: 'right',
+            },
+          ],
+        },
+        footer: {
+          style: 'dark',
+          links: [
+            {
+              title: 'Community',
+              items: [
+                { label: 'Stack Overflow', href: 'https://stackoverflow.com/questions/tagged/docusaurus' },
+                { label: 'Discord', href: 'https://discordapp.com/invite/docusaurus' },
+                { label: 'X', href: 'https://x.com/docusaurus' },
+              ],
+            },
+            {
+              title: 'More',
+              items: [
+                { label: 'GitHub', href: 'https://github.com/facebook/docusaurus' },
+              ],
+            },
+          ],
+          copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        },
+        prism: {
+          theme: prismThemes.github,
+          darkTheme: prismThemes.dracula,
+        },
+      }),
 };
 
 export default config;
