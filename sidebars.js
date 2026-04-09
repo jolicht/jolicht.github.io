@@ -21,10 +21,8 @@ const sidebars = {
             label: 'Architecture Decision Records',
             collapsed: true,
             link: {
-                type: 'generated-index',
-                title: 'Architecture Decision Records',
-                description: 'Here you can find all strategic architectural decisions.',
-                slug: '/adr',
+                type: 'doc',
+                id: 'adr/index'
             },
             items: [
                 {
