@@ -3,6 +3,7 @@ id: adr-004-domain-policy-orchestration
 title: ADR-004 Orchestrating Domain Policies
 description: Decision to orchestrate Domain Policies in the Application Layer to keep Aggregate Roots pure and free of injected services.
 tags: [ architecture, ddd, application-layer, domain-policy ]
+image: /img/og/adr-004-domain-policy-orchestration.jpg
 ---
 
 # ADR-004: Orchestrating Domain Policies in the Application Layer

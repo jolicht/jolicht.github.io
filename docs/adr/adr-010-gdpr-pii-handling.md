@@ -3,6 +3,7 @@ id: adr-010-gdpr-pii-handling
 title: ADR-010 GDPR and Personal Data Handling
 description: Decision to exclude Personal Data (PII) from the immutable Event Store to comply with GDPR, utilizing a separate mutable store instead.
 tags: [ architecture, event-sourcing, gdpr, privacy, compliance ]
+image: /img/og/adr-010-gdpr-pii-handling.jpg
 ---
 
 # ADR-010: Handling Personal Data (GDPR) in an Event-Sourced System

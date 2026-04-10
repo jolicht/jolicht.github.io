@@ -3,6 +3,7 @@ id: adr-008-strict-framework-agnosticism
 title: ADR-008 Strict Framework Agnosticism
 description: Decision to enforce a strictly framework-agnostic Domain Layer, forbidding the use of external libraries, ORM attributes, or framework-specific validation.
 tags: [ architecture, ddd, domain-layer, framework-agnostic ]
+image: /img/og/adr-008-strict-framework-agnosticism.jpg
 ---
 
 # ADR-008: Strict Framework Agnosticism in the Domain Layer

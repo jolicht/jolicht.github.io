@@ -3,6 +3,7 @@ id: adr-009-api-response-strategy
 title: ADR-009 API Response Strategy for Commands
 description: Decision on how to handle API responses for state-mutating commands given the eventual consistency of our read models.
 tags: [ architecture, api, cqrs, eventual-consistency ]
+image: /img/og/adr-009-api-response-strategy.jpg
 ---
 
 # ADR-009: API Response Strategy for Command Endpoints

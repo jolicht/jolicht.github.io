@@ -3,6 +3,7 @@ id: adr-005-separation-of-state
 title: ADR-005 Separation of State from Aggregate Root
 description: Decision to extract the internal data properties of an Aggregate into a dedicated State object to separate behavior from data.
 tags: [ architecture, ddd, aggregate, event-sourcing ]
+image: /img/og/adr-005-separation-of-state.jpg
 ---
 
 # ADR-005: Separation of State from Aggregate Root
