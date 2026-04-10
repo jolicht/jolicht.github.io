@@ -13,7 +13,7 @@ order, these records are grouped by their architectural domain to provide better
 
 Decisions defining the fundamental boundaries, paradigms, and physical structure of the system.
 
-* [ADR-001: Event Sourcing and CQRS](./adr-001-event-sourcing-and-cqrs)
+* [ADR-001: Event Sourcing and CQRS](/docs/adr/adr-001-event-sourcing-and-cqrs)
 * [ADR-002: Modular Monolith over Microservices](./adr-002-modular-monolith)
 * [ADR-003: Hexagonal Architecture (Ports and Adapters)](./adr-003-hexagonal-architecture)
 * [ADR-008: Strict Framework Agnosticism in the Domain Layer](./adr-008-strict-framework-agnosticism)

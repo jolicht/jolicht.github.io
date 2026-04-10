@@ -2,6 +2,11 @@
 
 import {themes as prismThemes} from 'prism-react-renderer';
 
+/** * Logic to detect development environment for local absolute URLs
+ */
+const isDevelopment = process.env.NODE_ENV === 'development';
+const siteUrl = isDevelopment ? 'http://localhost:3000' : 'https://lichtenwallner.at';
+
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Johannes Lichtenwallner',
@@ -12,7 +17,8 @@ const config = {
     v4: true,
   },
 
-  url: 'https://lichtenwallner.at',
+  // Dynamic URL assignment based on environment
+  url: siteUrl,
   baseUrl: '/',
 
   organizationName: 'jolicht',
@@ -37,7 +43,6 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          // Removed path and routeBasePath so Docusaurus uses the default "docs/" directory
           sidebarPath: './sidebars.js',
           editUrl: 'https://github.com/jolicht/jolicht.github.io/tree/main/',
         },
@@ -52,7 +57,9 @@ const config = {
   themeConfig:
   /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
       ({
-        image: 'img/docusaurus-social-card.jpg',
+        // This will now resolve to http://localhost:3000/img/... in dev
+        // and https://lichtenwallner.at/img/... in production
+        image: 'img/og/lichtenwallner.at.jpg',
         colorMode: {
           respectPrefersColorScheme: true,
         },
@@ -62,6 +69,7 @@ const config = {
             name: 'keywords',
             content: 'PHP, Symfony, Event Sourcing, CQRS, Serverless, AWS, Architecture, Laravel',
           },
+          { name: 'twitter:card', content: 'summary_large_image' },
         ],
         navbar: {
           title: 'Johannes Lichtenwallner',
@@ -72,7 +80,7 @@ const config = {
           items: [
             {
               type: 'docSidebar',
-              sidebarId: 'mainSidebar', // Correctly references the sidebar defined in sidebars.js
+              sidebarId: 'mainSidebar',
               position: 'left',
               label: 'Documentation',
             },
@@ -87,25 +95,19 @@ const config = {
           style: 'dark',
           links: [
             {
-              title: 'Community',
+              title: 'Connect',
               items: [
-                { label: 'Stack Overflow', href: 'https://stackoverflow.com/questions/tagged/docusaurus' },
-                { label: 'Discord', href: 'https://discordapp.com/invite/docusaurus' },
-                { label: 'X', href: 'https://x.com/docusaurus' },
-              ],
-            },
-            {
-              title: 'More',
-              items: [
-                { label: 'GitHub', href: 'https://github.com/facebook/docusaurus' },
+                { label: 'GitHub', href: 'https://github.com/jolicht' },
+                { label: 'LinkedIn', href: 'https://www.linkedin.com/in/johanneslichtenwallner/' },
               ],
             },
           ],
-          copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+          copyright: `Copyright © ${new Date().getFullYear()} Johannes Lichtenwallner. Built with Docusaurus.`,
         },
         prism: {
           theme: prismThemes.github,
           darkTheme: prismThemes.dracula,
+          additionalLanguages: ['php', 'bash', 'json'],
         },
       }),
 };

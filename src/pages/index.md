@@ -27,7 +27,7 @@ Covered areas include:
 
 <div style={{ margin: '2rem 0' }}>
   <Link className="button button--primary button--lg"
-    to="/docs/adr">Browse the ADRs</Link>
+    to="/docs/adr/">Browse the ADRs</Link>
 </div>
 
 ## Key Decisions
