@@ -3,6 +3,7 @@ id: adr-002-modular-monolith
 title: ADR-002 Modular Monolith over Microservices
 description: Decision to build a Modular Monolith instead of Microservices to reduce operational overhead while maintaining strict boundaries.
 tags: [ architecture, ddd, modular-monolith, microservices ]
+image: /img/og/adr-002-modular-monolith.jpg
 ---
 
 # ADR-002: Modular Monolith over Microservices

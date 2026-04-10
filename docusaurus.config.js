@@ -98,7 +98,7 @@ const config = {
               title: 'Connect',
               items: [
                 { label: 'GitHub', href: 'https://github.com/jolicht' },
-                { label: 'LinkedIn', href: 'https://www.linkedin.com/in/johanneslichtenwallner/' },
+                { label: 'LinkedIn', href: 'https://www.linkedin.com/in/lichtenwallner/' },
               ],
             },
           ],
