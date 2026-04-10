@@ -28,3 +28,25 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+.hero-doc-image-wrapper {
+  margin-top: 0.5rem; /* Small gap below breadcrumbs */
+  margin-bottom: 1.5rem; /* Space before the H1 title */
+  display: flex;
+  justify-content: flex-start;
+}
+
+.hero-doc-image {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  display: block;
+  border-radius: 4px;
+  border: 1px solid var(--ifm-color-emphasis-200);
+}
+
+@media (max-width: 996px) {
+  .hero-doc-image {
+    max-width: 100%;
+  }
+}
