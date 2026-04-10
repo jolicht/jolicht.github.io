@@ -59,7 +59,7 @@ const config = {
       ({
         // This will now resolve to http://localhost:3000/img/... in dev
         // and https://lichtenwallner.at/img/... in production
-        image: 'img/og/lichtenwallner.at.jpg',
+        image: 'img/og/lichtenwallner.at.01.jpg',
         colorMode: {
           respectPrefersColorScheme: true,
         },

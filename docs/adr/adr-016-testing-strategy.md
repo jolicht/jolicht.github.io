@@ -3,6 +3,7 @@ id: adr-016-testing-strategy
 title: ADR-016 Testing Strategy and the Honeycomb Model
 description: Decision on utilizing a behavior-centric Honeycomb testing strategy tailored for DDD and Event Sourcing to secure business logic and enable fearless refactoring.
 tags: [ architecture, testing, tdd, bdd, event-sourcing, ddd, integration-testing ]
+image: /img/og/adr-016-testing-strategy.jpg
 ---
 
 # ADR-016: Testing Strategy and the Honeycomb Model

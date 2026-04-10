@@ -3,6 +3,7 @@ id: adr-014-cross-context-references
 title: ADR-014 Cross-Context References & Shared Kernel
 description: Decision on how to reference identities across different Bounded Contexts to maintain strict autonomy and prevent tight coupling.
 tags: [ architecture, domain-driven-design, bounded-context, shared-kernel, coupling ]
+image: /img/og/adr-014-cross-context-references.jpg
 ---
 
 # ADR-014: Cross-Context References & Shared Kernel

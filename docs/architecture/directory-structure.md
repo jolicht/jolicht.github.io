@@ -1,6 +1,7 @@
 ---
 id: directory-structure
 title: Directory Structure Cheat Sheet
+image: /img/og/architecture/directory-structure.jpg
 ---
 
 # Architecture and Directory Structure

@@ -3,6 +3,7 @@ id: adr-012-event-enrichment
 title: ADR-012 Event Enrichment (Fat Events)
 description: Decision to use context-enriched events to enable stateless projections, with a strict exception for PII data.
 tags: [ architecture, event-sourcing, domain-events, projections ]
+image: /img/og/adr-012-event-enrichment.jpg
 ---
 
 # ADR-012: Event Enrichment (Fat Events)

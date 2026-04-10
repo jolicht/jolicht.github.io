@@ -3,6 +3,7 @@ id: adr-011-test-suite-segmentation
 title: ADR-011 Test Suite Segmentation & Configuration
 description: Decision to categorize tests by type into distinct directories and use isolated configuration files to optimize pipelines, environment setups, and enforce strict mocking rules.
 tags: [ architecture, testing, devops, phpunit, event-sourcing, bdd, api-testing, mocking ]
+image: /img/og/adr-011-test-suite-segmentation.jpg
 ---
 
 # ADR-011: Test Suite Segmentation & Configuration

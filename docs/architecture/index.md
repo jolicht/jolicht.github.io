@@ -2,6 +2,7 @@
 id: index
 title: Architecture Overview
 slug: /
+image: /img/og/architecture/architecture.index.jpg
 ---
 
 # poolplayers.world Architecture
