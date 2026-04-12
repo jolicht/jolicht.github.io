@@ -3,7 +3,7 @@ id: adr-006-action-domain-responder
 title: ADR-006 Command-Based API & Action-Domain-Responder
 description: Decision to use a Command-Based API via the Action-Domain-Responder pattern, relying primarily on GET and POST requests.
 tags: [ architecture, api, action-domain-responder, delivery, command-based-api, cqrs ]
-image: /img/og/adr-006-action-domain-responder.jpg
+image: /img/og/adr/adr-006-action-domain-responder.jpg
 ---
 
 # ADR-006: Command-Based API & Action-Domain-Responder (ADR) Pattern

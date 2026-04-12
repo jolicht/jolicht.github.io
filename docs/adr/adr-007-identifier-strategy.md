@@ -3,7 +3,7 @@ id: adr-007-identifier-strategy
 title: ADR-007 Identifier Strategy (Client-Provided UUIDv7)
 description: Decision to use UUIDv7 for all entities, preferring client-provided IDs with a controller fallback to support strict CQRS.
 tags: [ architecture, ddd, event-sourcing, identifiers, api, uuidv7 ]
-image: /img/og/adr-007-identifier-strategy.jpg
+image: /img/og/adr/adr-007-identifier-strategy.jpg
 ---
 
 # ADR-007: Identifier Generation Strategy (Client-Provided UUIDv7)

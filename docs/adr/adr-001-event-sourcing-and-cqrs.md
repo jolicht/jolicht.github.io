@@ -3,7 +3,7 @@ id: adr-001-event-sourcing-and-cqrs
 title: ADR-001 Event Sourcing & CQRS
 description: Decision to use Event Sourcing for state persistence and CQRS to separate read and write operations.
 tags: [ architecture, ddd, event-sourcing, cqrs ]
-image: /img/og/adr-001-event-sourcing-and-cqrs.jpg
+image: /img/og/adr/adr-001-event-sourcing-and-cqrs.jpg
 ---
 
 # ADR-001: Event Sourcing and CQRS for Core Domains

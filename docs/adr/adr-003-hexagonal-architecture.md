@@ -3,7 +3,7 @@ id: adr-003-hexagonal-architecture
 title: ADR-003 Hexagonal Architecture
 description: Decision to use Hexagonal Architecture (Ports and Adapters) to isolate business logic from technical infrastructure.
 tags: [ architecture, ddd, hexagonal-architecture, ports-and-adapters ]
-image: /img/og/adr-003-hexagonal-architecture.jpg
+image: /img/og/adr/adr-003-hexagonal-architecture.jpg
 ---
 
 # ADR-003: Hexagonal Architecture (Ports and Adapters)
