@@ -27,6 +27,7 @@ Decisions regarding the internal design of Aggregate Roots, Domain Events, and B
 * [ADR-004: Orchestrating Domain Policies in the Application Layer](/docs/adr/adr-004-domain-policy-orchestration)
 * [ADR-005: Separation of State from Aggregate Root](/docs/adr/adr-005-separation-of-state)
 * [ADR-012: Event Enrichment (Fat Events)](/docs/adr/adr-012-event-enrichment)
+* [ADR-017: Domain Instructions vs. Application Commands](/docs/adr/adr-017-domain-instructions) 
 
 ### API Design & Communication
 
@@ -43,6 +44,7 @@ Decisions concerning persistence, AWS serverless routing, compliance, and serial
 * [ADR-010: Handling Personal Data (GDPR) in an Event-Sourced System](/docs/adr/adr-010-gdpr-pii-handling)
 * [ADR-013: Centralized Serialization for Typed Domain Events](/docs/adr/adr-013-typed-event-properties)
 * [ADR-015: Serverless Event Fan-Out and Idempotent Projections](/docs/adr/adr-015-serverless-event-fan-out)
+* [ADR-018: Dual Serialization Strategy for Value Objects (Identifiers)](/docs/adr/adr-018-dual-serialization-strategy)
 
 ### Quality Assurance & Testing
 
