@@ -3,7 +3,7 @@ id: adr-015-serverless-event-fan-out
 title: ADR-015 Serverless Event Fan-Out and Idempotent Projections
 description: Decision on utilizing AWS EventBridge and standard SQS for context-based fan-out, enforcing playhead-based idempotency to handle out-of-order events.
 tags: [ architecture, serverless, aws, event-driven, event-sourcing, projections, sqs, eventbridge, idempotency, event-sauce ]
-image: /img/og/adr-015-serverless-event-fan-out.jpg
+image: /img/og/adr/adr-015-serverless-event-fan-out.jpg
 ---
 
 # ADR-015: Serverless Event Fan-Out and Idempotent Projections

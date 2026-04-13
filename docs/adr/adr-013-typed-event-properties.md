@@ -3,7 +3,7 @@ id: adr-013-typed-event-properties
 title: ADR-013 Centralized Serialization for Typed Domain Events
 description: Decision to strictly type Domain Events using POPOs and delegate their serialization to a centralized Symfony Serializer instead of implementing manual payload methods.
 tags: [ architecture, event-sourcing, domain-driven-design, symfony-serializer ]
-image: /img/og/adr-013-typed-event-properties.jpg
+image: /img/og/adr/adr-013-typed-event-properties.jpg
 ---
 
 # ADR-013: Centralized Serialization for Typed Domain Events
