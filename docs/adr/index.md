@@ -3,6 +3,7 @@ title: Architecture Decision Records
 description: Thematic and chronological list of all architectural decisions for poolplayers.world.
 sidebar_position: 1
 image: /img/og/adr/adr.index.jpg
+sidebar: adrSidebar
 ---
 
 # Architecture Decision Records

@@ -50,3 +50,9 @@
     max-width: 100%;
   }
 }
+
+
+.menu__list-item:has([aria-label="ADR Hidden"]),
+.menu__list-item:has([aria-label="Architecture Hidden"]) {
+  display: none;
+}
